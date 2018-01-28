@@ -26,27 +26,27 @@ var Form = React.createClass({
 	render: function() {
 	    console.log(this.state)
 	    return (
-	        <div>
-	          <div className="text-center">
+	        <div style={{backgroundColor:'#ccffcc'}}>
+	          <div className="text-center" >
 	            <h1>Contact Me</h1>
 	            <form onSubmit={this.submitForm}>
 	              <div>
-	                <div>
-	                  <span className="glyphicon glyphicon-user"><input type="text" ref="name" placeholder="Enter Name"/></span>
+	                <div className="form-group">
+	                  <span className="glyphicon glyphicon-user"><input className="form-control" type="text" ref="name" placeholder="Enter Name"/></span>
 	                </div>
-	                <div>
-	                  <span className="glyphicon glyphicon-user"><input type="text" ref="email" placeholder="Enter Email"/></span>
+	                <div className="form-group">
+	                  <span className="glyphicon glyphicon-envelope"><input className="form-control" type="text" ref="email" placeholder="Enter Email"/></span>
 	                </div>
-	                <div className="modal-body">
-	                  <span className="glyphicon glyphicon-lock"><input type="textarea" ref="message" placeholder="Enter Message"/></span>
+	                <div className="form-group">
+	                  <span className="glyphicon glyphicon-file"><textarea className="form-control" type="textarea" ref="message" placeholder="Enter Message"/></span>
 	                </div>
-	                <div>
+	                <div className="form-group">
 	                  <input className="btn btn-default" type="submit" />
 	                </div>
 	              </div>
 	            </form>
 	          </div>
-	          <Footer/>
+	          <Footer />
 	        </div>
     	);
   	}

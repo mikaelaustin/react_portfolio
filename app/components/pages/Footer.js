@@ -11,8 +11,8 @@ export default class Footer extends Component {
   }
   render() {
     return (
-        <div className="text-center">
-          <footer>
+        <div style={{backgroundColor: '#e6ffe6', fontColor:'black'}}className="text-center">
+          <footer style={{color:'black'}}>
             <Link style={{padding: '5px'}} to="/">Home</Link>
             <Link style={{padding: '5px'}} to="/about">About Me</Link>
             <Link style={{padding: '5px'}} to="/contact">Contact Me</Link>
