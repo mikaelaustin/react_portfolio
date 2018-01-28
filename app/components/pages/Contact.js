@@ -37,8 +37,8 @@ var Form = React.createClass({
 	                <div>
 	                  <span className="glyphicon glyphicon-user"><input type="text" ref="email" placeholder="Enter Email"/></span>
 	                </div>
-	                <div>
-	                  <span className="glyphicon glyphicon-lock"><input type="message" ref="message" placeholder="Enter Message"/></span>
+	                <div className="modal-body">
+	                  <span className="glyphicon glyphicon-lock"><input type="textarea" ref="message" placeholder="Enter Message"/></span>
 	                </div>
 	                <div>
 	                  <input className="btn btn-default" type="submit" />
@@ -46,9 +46,11 @@ var Form = React.createClass({
 	              </div>
 	            </form>
 	          </div>
+	          <Footer/>
 	        </div>
     	);
   	}
+ 
 });
 
 module.exports = Form;

@@ -10,7 +10,7 @@ export default class Home extends Component {
 	        <div>
 	        	<Header/>
 	          	<h1 className = "text-center">Welcome to Mikael's Site!</h1>
-		         <img id="me" src="./images/me.jpg"/><br></br>
+		         <img id="me" style={{height: '300px', rotate: '90deg'}} src="./images/me.jpg"/><br></br>
 		          		
 				<Footer/>
 			</div>	

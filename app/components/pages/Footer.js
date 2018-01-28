@@ -12,7 +12,7 @@ export default class Footer extends Component {
   render() {
     return (
         <div className="text-center">
-          <footer id="footer">
+          <footer>
             <Link style={{padding: '5px'}} to="/">Home</Link>
             <Link style={{padding: '5px'}} to="/about">About Me</Link>
             <Link style={{padding: '5px'}} to="/contact">Contact Me</Link>
